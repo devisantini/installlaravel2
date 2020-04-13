@@ -1,3 +1,4 @@
+Web.php
 <?php
 
 /*
@@ -14,5 +15,4 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/dashboard','AdminController@dashboard');
+Route:: resource('barang','AdminController');
